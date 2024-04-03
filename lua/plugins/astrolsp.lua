@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -64,21 +62,21 @@ return {
         -- can either be a string of a client capability or a function of `fun(client, bufnr): boolean`
         -- condition will be resolved for each client on each execution and if it ever fails for all clients,
         -- the auto commands will be deleted for that buffer
-        cond = "textDocument/documentHighlight",
+        -- cond = "textDocument/documentHighlight",
         -- cond = function(client, bufnr) return client.name == "lua_ls" end,
         -- list of auto commands to set
-        {
-          -- events to trigger
-          event = { "CursorHold", "CursorHoldI" },
-          -- the rest of the autocmd options (:h nvim_create_autocmd)
-          desc = "Document Highlighting",
-          callback = function() vim.lsp.buf.document_highlight() end,
-        },
-        {
-          event = { "CursorMoved", "CursorMovedI", "BufLeave" },
-          desc = "Document Highlighting Clear",
-          callback = function() vim.lsp.buf.clear_references() end,
-        },
+        -- {
+        --   -- events to trigger
+        --   event = { "CursorHold", "CursorHoldI" },
+        --   -- the rest of the autocmd options (:h nvim_create_autocmd)
+        --   desc = "Document Highlighting",
+        --   callback = function() vim.lsp.buf.document_highlight() end,
+        -- },
+        -- {
+        --   event = { "CursorMoved", "CursorMovedI", "BufLeave" },
+        --   desc = "Document Highlighting Clear",
+        --   callback = function() vim.lsp.buf.clear_references() end,
+        -- },
       },
     },
     -- mappings to be set up on attaching of a language server
