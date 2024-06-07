@@ -26,22 +26,24 @@ return {
     },
   },
   { import = "astrocommunity.pack.kotlin" },
-  { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.wgsl" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.tailwindcss" },
-  { import = "astrocommunity.pack.typescript-all-in-one" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.nvim-surround" },
-  { import = "astrocommunity.note-taking.obsidian-nvim" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
-  { import = "astrocommunity.colorscheme.nightfox-nvim" },
-  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
-  { import = "astrocommunity.colorscheme.onedarkpro-nvim" },
+  {
+    import = "astrocommunity.colorscheme.catppuccin",
+    opts = {
+      integrations = {
+        noice = false, -- Seems to be broken atm
+      },
+    },
+  },
 }
