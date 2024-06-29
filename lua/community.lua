@@ -26,6 +26,7 @@ return {
     },
   },
   { import = "astrocommunity.pack.kotlin" },
+  { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.rust" },
@@ -38,12 +39,5 @@ return {
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.nvim-surround" },
-  {
-    import = "astrocommunity.colorscheme.catppuccin",
-    opts = {
-      integrations = {
-        noice = false, -- Seems to be broken atm
-      },
-    },
-  },
+  { import = "astrocommunity.colorscheme.catppuccin" },
 }
