@@ -54,21 +54,13 @@ return {
         --   desc = "Previous buffer",
         -- },
 
-        ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
-        ["<Leader>bD"] = {
-          function()
-            require("astronvim.utils.status").heirline.buffer_picker(
-              function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
-            )
-          end,
-          desc = "Pick to close",
-        },
-        -- tables with the `name` key will be registered with which-key if it's installed
+        -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
-        ["<Leader>b"] = { name = "Buffers" },
+        -- ["<Leader>b"] = { desc = "Buffers" },
 
-        ["]q"] = { ":cnext<cr>", name = "Quickfix Next" },
-        ["[q"] = { ":cprev<cr>", name = "Quickfix Prev" },
+        ["]q"] = { ":cnext<cr>", desc = "Quickfix Next" },
+        ["[q"] = { ":cprev<cr>", desc = "Quickfix Prev" },
+
         -- mappings seen under group name "Buffer"
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
