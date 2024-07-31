@@ -61,6 +61,15 @@ return {
         ["]q"] = { ":cnext<cr>", desc = "Quickfix Next" },
         ["[q"] = { ":cprev<cr>", desc = "Quickfix Prev" },
 
+        ["gra"] = false,
+        ["grn"] = false,
+        ["grr"] = false,
+        ["gr"] = {
+          function() require("telescope.builtin").lsp_references() end,
+          desc = "Find references",
+          remap = true,
+        },
+
         -- mappings seen under group name "Buffer"
         -- quick save
         -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command

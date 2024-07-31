@@ -26,7 +26,7 @@ return {
     },
   },
   { import = "astrocommunity.pack.kotlin" },
-  { import = "astrocommunity.pack.cs" },
+  -- { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.rust" },
