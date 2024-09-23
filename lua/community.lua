@@ -37,9 +37,12 @@ return {
   { import = "astrocommunity.pack.astro" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
+  { import = "astrocommunity.quickfix.nvim-bqf" },
   { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.completion.copilot-cmp" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
 }
