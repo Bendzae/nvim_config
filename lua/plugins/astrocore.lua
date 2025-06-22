@@ -78,7 +78,7 @@ showtabline = 0,
       t = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
-        ["<Esc>"] = { "<C-\\><C-n>" },
+        -- ["<Esc>"] = { "<C-\\><C-n>" },
       },
     },
   },
