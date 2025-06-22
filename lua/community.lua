@@ -8,23 +8,6 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.java" },
-  {
-    "mfussenegger/nvim-jdtls",
-    opts = {
-      settings = {
-        java = {
-          configuration = {
-            runtimes = {
-              {
-                name = "JavaSE-17",
-                path = "/Users/Ben/.sdkman/candidates/java/17.0.0-tem",
-              },
-            },
-          },
-        },
-      },
-    },
-  },
   { import = "astrocommunity.pack.kotlin" },
   -- { import = "astrocommunity.pack.cs" },
   { import = "astrocommunity.pack.docker" },
@@ -35,11 +18,14 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.astro" },
+  { import = "astrocommunity.pack.just" },
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.editing-support.vim-visual-multi" },
   { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.motion.flash-nvim" },
+  { import = "astrocommunity.markdown-and-latex.render-markdown-nvim" },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
 }
